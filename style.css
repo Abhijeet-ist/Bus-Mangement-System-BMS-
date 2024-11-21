@@ -1,0 +1,748 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 60px 20px;
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ddd;
+}
+
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #4e54c8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ddd;
+}
+
+
+.tracker {
+    padding: 20px;
+    text-align: center;
+}
+
+#map {
+    height: 500px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #4e54c8;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(100%);
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#search-button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #3d43b0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ddd;
+}
+
+.nav-menu a.active {
+    color: #ddd;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#login-button,
+#signup-button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-button:hover,
+#signup-button:hover {
+    background-color: #3d43b0;
+}
+
+#passenger-dashboard {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#passenger-dashboard h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#rides-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ride-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ride-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.ride-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#book-ride {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#book-ride h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #3d43b0;
+}
+
+#booking-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#notifications {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#notifications h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 15px;
+}
+
+#notifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item.alert {
+    border-left: 5px solid #ff6f6f;
+}
+
+.notification-item.update {
+    border-left: 5px solid #4e54c8;
+}
+
+.notification-item.info {
+    border-left: 5px solid #4caf50;
+}
+
+#payment-history {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#payment-history h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#payment-history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.payment-item .status {
+    font-weight: bold;
+}
+
+.payment-item .paid {
+    color: #4caf50;
+}
+
+.payment-item .pending {
+    color: #ff9800;
+}
+
+.payment-item .failed {
+    color: #f44336;
+}
+
+#bus-management {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#bus-management h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#bus-management-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #3d43b0;
+}
+
+#bus-list {
+    margin-top: 20px;
+}
+
+#bus-list h3 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+#bus-list-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bus-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bus-item p {
+    margin: 5px 0;
+}
+
+#route-management {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#route-management h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#route-management-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #3d43b0;
+}
+
+#route-list {
+    margin-top: 20px;
+}
+
+#route-list h3 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+#route-list-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.route-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.route-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.route-item button:hover {
+    background-color: #d32f2f;
+}
+
+#sensor-data-overview {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#sensor-data-overview h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#sensor-data-container {
+    margin-top: 20px;
+}
+
+#sensor-data-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sensor-data-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sensor-data-item p {
+    margin: 5px 0;
+}
+
+.sensor-data-item .capacity {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.sensor-data-item .boarding {
+    font-weight: bold;
+    color: #2196f3;
+}
+
+.sensor-data-item .alighting {
+    font-weight: bold;
+    color: #f44336;
+}
+
+#reports-analytics {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+#reports-analytics h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#report-controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#report-controls label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#report-type {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#generate-report {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-report:hover {
+    background-color: #3d43b0;
+}
+
+#report-output {
+    margin-top: 20px;
+}
+
+#booking-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#booking-form h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+#booking-form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#submit-booking {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-booking:hover {
+    background-color: #3d43b0;
+}
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Bus Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Management System</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#bus-routes">Bus Routes</a></li>
+                <li><a href="#book-tickets">Book Tickets</a></li>
+                <li><a href="#payment-history">Payment History</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button id="login-button">Login</button>
+            <button id="signup-button">Signup</button>
+        </div>
+    </header>
+    
+    <header>
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tracker</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to the Real-Time Bus Tracker</h2>
+            <p>Get live updates on bus locations and routes in your city.</p>
+            <button class="cta-button"> Now</button>
+        </section>
+        <section class="tracker">
+            <h2>Bus Tracker</h2>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search for routes, buses, or stops">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="map"></div>
+        </section>
+        
+        <section id="passenger-dashboard">
+            <h2>Upcoming Rides</h2>
+            <div id="rides-container">
+            </div>
+        </section>
+            
+    </main>
+
+    <footer>
+        <p>Contact us: info@busmanagement.com</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <section id="book-ride">
+        <h2>Book a Ride</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="starting-point">Starting Point:</label>
+                <input type="text" id="starting-point" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="preferred-bus">Preferred Bus:</label>
+                <select id="preferred-bus">
+                    <option value="">Select Bus</option>
+                    
+                </select>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="booking-details">
+            
+        </div>
+    </section>
+    <section id="notifications">
+        <h2>Notifications</h2>
+        <div id="notifications-container">
+            
+        </div>
+    </section>
+    <section id="payment-history">
+        <h2>Payment History</h2>
+        <div id="payment-history-container">
+           
+        </div>
+    </section>
+    <section id="bus-management">
+        <h2>Bus Management Panel</h2>
+        <form id="bus-management-form">
+            <div class="form-group">
+                <label for="bus-number">Bus Number:</label>
+                <input type="text" id="bus-number" required>
+            </div>
+            <div class="form-group">
+                <label for="route">Route:</label>
+                <input type="text" id="route" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="">Select Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Under Maintenance">Under Maintenance</option>
+                </select>
+            </div>
+            <button type="submit">Add/Update Bus</button>
+        </form>
+        <div id="bus-list">
+            <h3>Current Buses</h3>
+            <ul id="bus-list-container">
+         
+            </ul>
+        </div>
+    </section>
+    <section id="sensor-data-overview">
+        <h2>Sensor Data Overview</h2>
+        <div id="sensor-data-container">
+            <ul id="sensor-data-list">
+                
+            </ul>
+        </div>
+    </section>
+    <section id="reports-analytics">
+        <h2>Reports and Analytics</h2>
+        <div id="report-controls">
+            <label for="report-type">Select Report Type:</label>
+            <select id="report-type">
+                <option value="utilization">Bus Utilization</option>
+                <option value="efficiency">Route Efficiency</option>
+                <option value="peak-hours">Peak Hours</option>
+                <option value="payment">Payment Collections</option>
+            </select>
+            <button id="generate-report">Generate Report</button>
+        </div>
+        <div id="report-output">
+            
+        </div>
+    </section>
+    <section id="booking-form">
+        <h2>Booking Form</h2>
+        <form id="booking-form-content">
+            <div class="form-group">
+                <label for="passenger-name">Full Name:</label>
+                <input type="text" id="passenger-name" name="passenger-name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-info">Contact Information:</label>
+                <input type="text" id="contact-info" name="contact-info" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="google-pay">Google Pay</option>
+                    <option value="apple-pay">Apple Pay</option>
+                </select>
+            </div>
+            <button type="submit" id="submit-booking">Submit Booking</button>
+        </form>
+    </section>
+         
+</body>
+</html>
